@@ -1,6 +1,6 @@
 import './CourseGoalItem.css';
 
-const CourseGoalItem = (props) => {
+function CourseGoalItem(props) {
   // const [deleteText, setDeleteText] = useState('');
 
   const deleteHandler = () => {
@@ -13,6 +13,6 @@ const CourseGoalItem = (props) => {
       {props.children}
     </li>
   );
-};
+}
 
 export default CourseGoalItem;

@@ -4,7 +4,7 @@ import './App.css';
 import CourseGoalList from './components/CourseGoals/CourseGoalList/CourseGoalList';
 import CourseInput from './components/CourseGoals/CourseInput/CourseInput';
 
-const App = () => {
+function App() {
   const [courseGoals, setCourseGoals] = useState([
     { text: 'Do all exercises!', id: 'g1' },
     { text: 'Finish the course!', id: 'g2' },
@@ -38,16 +38,14 @@ const App = () => {
       </section>
       <section id="goals">
         {content}
-        {/* {courseGoals.length > 0 && (
-          <CourseGoalList
-            items={courseGoals}
-            onDeleteItem={deleteItemHandler}
-          />
-        ) // <p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
-        } */}
+        {
+          // courseGoals.length > 0 && (
+          //   <CourseGoalList items={courseGoals} onDeleteItem={deleteItemHandler} />
+          // ) //<p style={{ textAlign: 'center' }}>No goals found. Maybe add one?</p>
+        }
       </section>
     </div>
   );
-};
+}
 
 export default App;

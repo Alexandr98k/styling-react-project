@@ -1,7 +1,7 @@
 import CourseGoalItem from '../CourseGoalItem/CourseGoalItem';
 import './CourseGoalList.css';
 
-const CourseGoalList = (props) => {
+function CourseGoalList(props) {
   return (
     <ul className="goal-list">
       {props.items.map((goal) => (
@@ -11,6 +11,6 @@ const CourseGoalList = (props) => {
       ))}
     </ul>
   );
-};
+}
 
 export default CourseGoalList;
